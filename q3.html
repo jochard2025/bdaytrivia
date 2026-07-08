@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+<style>
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	padding: 15px;
+	color: rgb(0, 0, 0);
+	font-weight: bold;
+	font-size: 2vmax;
+}
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+html, body {
+	margin: 0;
+	overflow: hidden
+}
+a {
+color: #000;
+text-decoration: none;
+}
+
+button {
+background: none;
+border: none;
+cursor: pointer;
+color: #27aae2;
+font-size: 5vmax;
+padding: 1vmax;
+}
+</style>
+
+
+	</head>
+	<body>
+
+				<div class="prev" z-index="3">
+		<a href="q2.html">
+				&#10094;		</a></div>
+				<div class="next" z-index="3">
+		<a href="q4.html">
+				&#10095;		</a></div>
+				
+				<div style=" display:flex; justify-content: center; align-items: center;">
+				<div style="position: absolute; margin-bottom: 10vmax;">
+		 <audio id="player" src="audio/q3.m4a"></audio>
+					<button onclick="document.getElementById('player').play()">&#9205</button>
+    					<button onclick="document.getElementById('player').pause()">&#9208</button>
+				</div>
+
+		<img src="slides/Round_2_04.png" style="max-height:100vh; max-width:100vw;" />
+
+				</div>
+
+	</body>
+</html>
